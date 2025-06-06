@@ -33,3 +33,5 @@ def init_session_state():
 
     # Indecisión (estado para mostrar inputs extra)
     st.session_state.setdefault("show_indeciso", False)
+
+    st.session_state.setdefault("trigger_rerun", False)
