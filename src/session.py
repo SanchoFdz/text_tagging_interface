@@ -5,10 +5,13 @@ from src.storage import load_texts
 
 def init_session_state():
     """
-    Inicializa el estado de la sesión si no está configurado.
+    Inicializa el estado de la sesión 
     Carga los datos originales y genera los DataFrames para anotación.
+
+    # TODO : Como vamos a resolver el tema de multiples usuarios usandolo una vez deployeado? Donde se almacenará todo y como se llevará rastro
+     de cada usuario? Será mejor enseñarlos a correrlo local? 
     """
-    # Datos originales (noticias)
+    # Datos (noticios) : ahorita esta funcion solo carga unos datos sinteticos de prubea que saqué de la biblioteca nltk
     if "original_df" not in st.session_state:
         st.session_state.original_df = load_texts()
 

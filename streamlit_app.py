@@ -1,9 +1,3 @@
-"""
-Archivo principal para correr la aplicación Streamlit.
-
-Autor: Tu Nombre
-"""
-
 import streamlit as st
 from src.session import init_session_state
 from src.anotador import render_annotation_interface
